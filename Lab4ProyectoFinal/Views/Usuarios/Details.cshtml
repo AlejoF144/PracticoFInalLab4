@@ -1,0 +1,37 @@
+﻿@model Lab4ProyectoFinal.Models.Usuario
+
+<div class="container my-5">
+    <h1 class="text-center mb-4">Datos del Usuario</h1>
+
+    <div class="card">
+        <div class="card-header">
+            <h4 class="mb-0">Detalles del Usuario</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3 fw-bold">Nombre:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Nombre)</dd>
+
+                <dt class="col-sm-3 fw-bold">Nivel:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Nivel)</dd>
+
+                <dt class="col-sm-3 fw-bold">Estado:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Estado)</dd>
+                <dt class="col-sm-3 fw-bold">Tarjeta:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Tarjeta.Id)</dd>
+
+                <dt class="col-sm-3 fw-bold">Domicilio:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Domicilio.Id)</dd>
+                <dt class="col-sm-3 fw-bold">Imagen:</dt>
+                <dd class="col-sm-9">
+                    <img src="/Fotos/@Html.DisplayFor(model => model.ImagenCarpeta)" alt="Imagen del usuario" class="img-fluid rounded" style="max-width: 300px;" />
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning me-2">Editar</a>
+        <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+    </div>
+</div>

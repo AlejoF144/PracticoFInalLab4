@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\lab4proyectofinal\\lab4proyectofinal\\services\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\services\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\lab4proyectofinal\\lab4proyectofinal\\views\\productoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\views\\productoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\lab4proyectofinal\\lab4proyectofinal\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Services\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Services\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Services\\AppDbContext.cs",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Services\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T05:39:21.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductoesController.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Controllers\\ProductoesController.cs",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Controllers\\ProductoesController.cs",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Controllers\\ProductoesController.cs",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Controllers\\ProductoesController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T02:29:53.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Views\\Productoes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Views\\Productoes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Views\\Productoes\\Index.cshtml",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Views\\Productoes\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T01:29:54.38Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

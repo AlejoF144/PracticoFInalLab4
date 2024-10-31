@@ -1,0 +1,46 @@
+﻿@model Lab4ProyectoFinal.Models.Producto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container my-5">
+    <h1 class="text-center mb-4">@ViewData["Title"] Producto</h1>
+
+    <div class="card">
+        <div class="card-header">
+            <h4 class="mb-0">Detalles del Producto</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3 fw-bold">Nombre:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Nombre)</dd>
+
+                <dt class="col-sm-3 fw-bold">Marca:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Marca)</dd>
+
+                <dt class="col-sm-3 fw-bold">Precio:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Precio)</dd>
+
+                <dt class="col-sm-3 fw-bold">Categoría:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Categoria)</dd>
+
+                <dt class="col-sm-3 fw-bold">Tamaño:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Tamaño)</dd>
+
+                <dt class="col-sm-3 fw-bold">Descripción:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Descripcion)</dd>
+
+                <dt class="col-sm-3 fw-bold">Imagen:</dt>
+                <dd class="col-sm-9">
+                    <img src="/Fotos/@Html.DisplayFor(model => model.ImagenCarpeta)" alt="Imagen del producto" class="img-fluid rounded" style="max-width: 300px;" />
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning me-2">Edit</a>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

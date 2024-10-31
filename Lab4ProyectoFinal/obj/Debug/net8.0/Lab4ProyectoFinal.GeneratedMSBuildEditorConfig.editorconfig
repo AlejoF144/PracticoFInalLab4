@@ -1,0 +1,139 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Lab4ProyectoFinal
+build_property.RootNamespace = Lab4ProyectoFinal
+build_property.ProjectDir = C:\Users\alejo\Desktop\Colegio\Tarea facu\Lab4ProyectoFinal\Lab4ProyectoFinal\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\alejo\Desktop\Colegio\Tarea facu\Lab4ProyectoFinal\Lab4ProyectoFinal
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Domicilios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9taWNpbGlvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Domicilios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9taWNpbGlvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Domicilios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9taWNpbGlvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Domicilios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9taWNpbGlvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Domicilios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9taWNpbGlvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/ImportarExcel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wb3J0YXJFeGNlbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/MetodoDePagoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0b2RvRGVQYWdvZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/MetodoDePagoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0b2RvRGVQYWdvZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/MetodoDePagoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0b2RvRGVQYWdvZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/MetodoDePagoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0b2RvRGVQYWdvZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/MetodoDePagoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0b2RvRGVQYWdvZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Productoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Productoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Productoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Productoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Productoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alejo/Desktop/Colegio/Tarea facu/Lab4ProyectoFinal/Lab4ProyectoFinal/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-77kuqeyfvf

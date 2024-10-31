@@ -1,0 +1,47 @@
+﻿@model Lab4ProyectoFinal.Models.Producto
+
+
+
+<div class="container my-5">
+    <h1 class="text-center mb-4">Eliminar un producto</h1>
+
+    <div class="alert alert-warning text-center" role="alert">
+        <h3>Seguro que desea eliminar este producto</h3
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h4 class="mb-0">Producto a Eliminar</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.Nombre)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Nombre)</dd>
+
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.Marca)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Marca)</dd>
+
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.Precio)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Precio)</dd>
+
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.Categoria)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Categoria)</dd>
+
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.Tamaño)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Tamaño)</dd>
+
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.Descripcion)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Descripcion)</dd>
+
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.ImagenCarpeta)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.ImagenCarpeta)</dd>
+            </dl>
+        </div>
+    </div>
+
+    <form asp-action="Delete" class="text-center mt-4">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </form>
+</div>

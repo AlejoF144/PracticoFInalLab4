@@ -1,0 +1,68 @@
+﻿@model Lab4ProyectoFinal.Models.Usuario
+
+@{
+    ViewData["Title"] = "Editar Usuario";
+}
+
+<h1 class="text-center mb-4">Editar los datos del usuario</h1>
+
+<hr />
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+            <input type="hidden" asp-for="Id" />
+
+            <div class="mb-3">
+                <label asp-for="Nombre" class="form-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Nivel" class="form-label"></label>
+                <input asp-for="Nivel" class="form-control" />
+                <span asp-validation-for="Nivel" class="text-danger"></span>
+            </div>
+
+            <div class="form-check mb-3">
+                <input class="form-check-input" asp-for="Estado" />
+                <label asp-for="Estado" class="form-check-label"></label>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="ImagenCarpeta" class="form-label">Dirección de Imagen</label>
+                <input asp-for="ImagenCarpeta" class="form-control" />
+                <span asp-validation-for="ImagenCarpeta" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="TarjetaId" class="form-label"></label>
+                <select asp-for="TarjetaId" class="form-select" asp-items="ViewBag.TarjetaId"></select>
+                <span asp-validation-for="TarjetaId" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="DomicilioId" class="form-label"></label>
+                <select asp-for="DomicilioId" class="form-select" asp-items="ViewBag.DomicilioId"></select>
+                <span asp-validation-for="DomicilioId" class="text-danger"></span>
+            </div>
+
+            <div class="d-grid gap-2">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="text-center mt-3">
+    <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

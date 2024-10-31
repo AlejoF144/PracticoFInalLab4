@@ -1,0 +1,46 @@
+﻿@model Lab4ProyectoFinal.Models.Usuario
+
+<div class="container my-5">
+    <h1 class="text-center mb-4">Eliminar un usuario</h1>
+
+    <div class="alert alert-warning text-center" role="alert">
+        <h3>¿Seguro que desea eliminar este usuario?</h3>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h4 class="mb-0">Usuario a Eliminar</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.Nombre)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Nombre)</dd>
+
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.Nivel)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Nivel)</dd>
+
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.Estado)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Estado)</dd>
+
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.Tarjeta)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Tarjeta.NumeroDeTarjeta)</dd>
+
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.Domicilio)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Domicilio.Calle)</dd>
+
+                <dt class="col-sm-3 fw-bold">Imagen</dt>
+                <dd class="col-sm-9">
+                    <img src="/Fotos/@Html.DisplayFor(model => model.ImagenCarpeta)" alt="Imagen del usuario" class="img-fluid rounded" style="max-width: 200px;" />
+                </dd>
+
+               
+            </dl>
+        </div>
+    </div>
+
+    <form asp-action="Delete" class="text-center mt-4">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger me-2">Eliminar</button>
+        <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+    </form>
+</div>
