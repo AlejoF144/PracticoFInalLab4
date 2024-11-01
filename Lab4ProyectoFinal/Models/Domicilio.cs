@@ -4,6 +4,7 @@
     {
         public int Id { get; set; }
         public string? Calle { get; set; }
-         public List<Usuario>? Usuarios { get; set; }
+        public List<UsuarioDomicilio>? Usuarios { get; set; }
+
     }
 }

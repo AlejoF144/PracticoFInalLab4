@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Lab4ProyectoFinal.Data;
 using Lab4ProyectoFinal.Models;
-using Lab4ProyectoFinal.Services;
 
 namespace Lab4ProyectoFinal.Controllers
 {

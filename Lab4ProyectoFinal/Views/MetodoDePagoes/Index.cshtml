@@ -1,50 +1,48 @@
 ﻿@model IEnumerable<Lab4ProyectoFinal.Models.MetodoDePago>
 
 @{
-    ViewData["Title"] = "Lista de Métodos de Pago";
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container my-5">
-    <h1 class="text-center mb-4">Lista de Métodos de Pago</h1>
+<h1>Index</h1>
 
-    <p class="text-end">
-        <a asp-action="Create" class="btn btn-success">Agregar Nuevo</a>
-    </p>
-
-    <table class="table  table-bordered">
-        <thead class="table-light">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.NumeroDeTarjeta)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.MarcaDeTarjeta)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Expiracion)
-                </th>
-                <th class="text-center">Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-        @foreach (var item in Model) {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.NumeroDeTarjeta)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.MarcaDeTarjeta)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Expiracion)
-                </td>
-                <td class="text-center">
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Editar</a>
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Detalles</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Eliminar</a>
-                </td>
-            </tr>
-        }
-        </tbody>
-    </table>
-</div>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroDeTarjeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MarcaDeTarjeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Expiracion)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroDeTarjeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MarcaDeTarjeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Expiracion)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

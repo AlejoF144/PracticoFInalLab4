@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Lab4ProyectoFinal.Data;
 using Lab4ProyectoFinal.Models;
-using Lab4ProyectoFinal.Services;
-using DocumentFormat.OpenXml.InkML;
 using X.PagedList.Extensions;
-
 
 namespace Lab4ProyectoFinal.Controllers
 {
@@ -18,11 +21,10 @@ namespace Lab4ProyectoFinal.Controllers
         }
 
         // GET: Productoes
-
         public IActionResult Index(string buscarProducto, int? page)
         {
-            int pageSize = 3; 
-            int pageNumber = page ?? 1; 
+            int pageSize = 3;
+            int pageNumber = page ?? 1;
 
             var productos = from producto in _context.Productos select producto;
 
@@ -37,23 +39,6 @@ namespace Lab4ProyectoFinal.Controllers
 
             return View(productosPaginados);
         }
-
-
-
-
-        /* public async Task<IActionResult> Index(string buscarProducto)
-         {
-             var productos = from producto in _context.Productos select producto;
-
-             if (!String.IsNullOrEmpty(buscarProducto))
-             {
-                 productos=productos.Where(s=>s.Nombre!.Contains(buscarProducto));
-             }
-             return View(await productos.OrderByDescending(p => p.Id).ToListAsync());
-             //return View(await _context.Productos.OrderByDescending(p=>p.Id).ToListAsync()); //Productos mas nuevo arriba de todo
-         }*/
-
-
         // GET: Productoes/Details/5
         public async Task<IActionResult> Details(int? id)
         {

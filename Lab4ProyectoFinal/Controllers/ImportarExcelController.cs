@@ -1,7 +1,7 @@
-﻿using Lab4ProyectoFinal.Services;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using ClosedXML.Excel;
 using Lab4ProyectoFinal.Models;
+using Lab4ProyectoFinal.Data;
 
 namespace Lab4ProyectoFinal.Controllers
 {

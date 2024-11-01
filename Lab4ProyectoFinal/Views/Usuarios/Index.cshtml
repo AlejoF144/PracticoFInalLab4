@@ -1,44 +1,66 @@
 ﻿@model IEnumerable<Lab4ProyectoFinal.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container my-4">
-    <h1 class="text-center mb-4">Listado de Usuarios</h1>
+<h1>Index</h1>
 
-    <p>
-        <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
-    </p>
-
-    <div class="table-responsive">
-        <table class="table table-hover align-middle">
-            <thead class="table-primary">
-                <tr>
-                    <th>@Html.DisplayNameFor(model => model.Nombre)</th>
-                    <th>@Html.DisplayNameFor(model => model.Nivel)</th>
-                    <th>@Html.DisplayNameFor(model => model.Estado)</th>
-                    <th>Imagen</th>
-                    <th>@Html.DisplayNameFor(model => model.Tarjeta)</th>
-                    <th>@Html.DisplayNameFor(model => model.Domicilio)</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Nivel)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Estado)</td>
-                        <td><img src="/Fotos/@item.ImagenCarpeta" class="img-fluid" style="max-width: 100px;" /></td>
-                        <td>@Html.DisplayFor(modelItem => item.Tarjeta.NumeroDeTarjeta)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Domicilio.Calle)</td>
-                        <td>
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Editar</a>
-                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Detalles</a>
-                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Eliminar</a>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-</div>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nivel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImagenCarpeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TarjetaId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TarjetaId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nivel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImagenCarpeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TarjetaId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DomicilioId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

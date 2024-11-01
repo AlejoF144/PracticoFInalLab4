@@ -1,18 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\",
+  "WorkspaceRootPath": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\lab4proyectofinal\\lab4proyectofinal\\services\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\services\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Migrations\\20241101033227_2do.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab4ProyectoFinal\\Migrations\\20241101033227_2do.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\lab4proyectofinal\\lab4proyectofinal\\views\\productoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\views\\productoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\controllers\\importarexcelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\controllers\\importarexcelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\lab4proyectofinal\\lab4proyectofinal\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\models\\usuariotarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\models\\usuariotarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\models\\domicilio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\models\\domicilio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,39 +51,123 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Services\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Services\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Services\\AppDbContext.cs",
-              "RelativeToolTip": "Lab4ProyectoFinal\\Services\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "Title": "20241101033227_2do.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Migrations\\20241101033227_2do.cs",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Migrations\\20241101033227_2do.cs",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Migrations\\20241101033227_2do.cs",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Migrations\\20241101033227_2do.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T05:39:21.061Z",
+              "WhenOpened": "2024-11-01T03:32:27.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ImportarExcelController.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Controllers\\ImportarExcelController.cs",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Controllers\\ImportarExcelController.cs",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Controllers\\ImportarExcelController.cs",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Controllers\\ImportarExcelController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAADgvwgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T03:32:10.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Models\\Usuario.cs",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Models\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T03:30:42.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Usuarios\\Index.cshtml",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Views\\Usuarios\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Usuarios\\Index.cshtml",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Views\\Usuarios\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T03:28:54.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T03:25:27.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Domicilio.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Models\\Domicilio.cs",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Models\\Domicilio.cs",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Models\\Domicilio.cs",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Models\\Domicilio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T03:24:34.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Controllers\\UsuariosController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwEAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T03:22:22.451Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductoesController.cs",
-              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Controllers\\ProductoesController.cs",
-              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Controllers\\ProductoesController.cs",
-              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Controllers\\ProductoesController.cs",
-              "RelativeToolTip": "Lab4ProyectoFinal\\Controllers\\ProductoesController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwCQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T02:29:53.518Z"
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Usuarios\\Create.cshtml",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Views\\Usuarios\\Create.cshtml",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Usuarios\\Create.cshtml",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Views\\Usuarios\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T03:17:46.232Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Views\\Productoes\\Index.cshtml",
-              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Views\\Productoes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Views\\Productoes\\Index.cshtml",
-              "RelativeToolTip": "Lab4ProyectoFinal\\Views\\Productoes\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T01:29:54.38Z"
+              "DocumentIndex": 5,
+              "Title": "UsuarioTarjeta.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Models\\UsuarioTarjeta.cs",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Models\\UsuarioTarjeta.cs",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Models\\UsuarioTarjeta.cs",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Models\\UsuarioTarjeta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T02:25:43.055Z",
+              "EditorCaption": ""
             }
           ]
         }

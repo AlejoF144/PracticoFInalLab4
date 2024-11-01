@@ -1,42 +1,37 @@
 ﻿@model Lab4ProyectoFinal.Models.MetodoDePago
 
 @{
-    ViewData["Title"] = "Detalles del Método de Pago";
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container my-5">
-    <h1 class="text-center mb-4">Detalles del Método de Pago</h1>
+<h1>Details</h1>
 
-    <div class="card">
-        <div class="card-header">
-            <h4 class="mb-0">Información del Método de Pago</h4>
-        </div>
-        <div class="card-body">
-            <dl class="row">
-                <dt class="col-sm-4">
-                    @Html.DisplayNameFor(model => model.NumeroDeTarjeta)
-                </dt>
-                <dd class="col-sm-8">
-                    @Html.DisplayFor(model => model.NumeroDeTarjeta)
-                </dd>
-                <dt class="col-sm-4">
-                    @Html.DisplayNameFor(model => model.MarcaDeTarjeta)
-                </dt>
-                <dd class="col-sm-8">
-                    @Html.DisplayFor(model => model.MarcaDeTarjeta)
-                </dd>
-                <dt class="col-sm-4">
-                    @Html.DisplayNameFor(model => model.Expiracion)
-                </dt>
-                <dd class="col-sm-8">
-                    @Html.DisplayFor(model => model.Expiracion)
-                </dd>
-            </dl>
-        </div>
-    </div>
-
-    <div class="text-center mt-4">
-        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Editar</a>
-        <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
-    </div>
+<div>
+    <h4>MetodoDePago</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NumeroDeTarjeta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NumeroDeTarjeta)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MarcaDeTarjeta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MarcaDeTarjeta)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Expiracion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Expiracion)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
 </div>

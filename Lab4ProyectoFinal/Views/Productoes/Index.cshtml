@@ -1,7 +1,5 @@
+﻿@model X.PagedList.IPagedList<Lab4ProyectoFinal.Models.Producto>
 ﻿@using X.PagedList.Mvc.Core
-@model X.PagedList.IPagedList<Lab4ProyectoFinal.Models.Producto>
-
-
 <div class="container my-4">
     <h1 class="text-center mb-4">Listado de Productos</h1>
 
@@ -48,23 +46,23 @@
         </table>
     </div>
     <div class="pagination-container">
-        @Html.PagedListPager(Model,page => Url.Action("Index", new { page }),new PagedListRenderOptions
-        {
-            UlElementClasses = new[] { "pagination", "justify-content-center" },
-            LiElementClasses = new[] { "page-item" },
-            PageClasses = new[] { "page-link" },
-            ActiveLiElementClass = "active",
-            LinkToPreviousPageFormat = "Anterior",
-            LinkToNextPageFormat = "Siguiente",
-            LinkToFirstPageFormat = "Primera",
-            LinkToLastPageFormat = "Última",
-            DisplayLinkToFirstPage = PagedListDisplayMode.Always,
-            DisplayLinkToLastPage = PagedListDisplayMode.Always,
-            DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
-            DisplayLinkToNextPage = PagedListDisplayMode.Always,
-            Display = PagedListDisplayMode.Always
-        })
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions
+   {
+       UlElementClasses = new[] { "pagination", "justify-content-center" },
+       LiElementClasses = new[] { "page-item" },
+       PageClasses = new[] { "page-link" },
+       ActiveLiElementClass = "active",
+       LinkToPreviousPageFormat = "Anterior",
+       LinkToNextPageFormat = "Siguiente",
+       LinkToFirstPageFormat = "Primera",
+       LinkToLastPageFormat = "Última",
+       DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+       DisplayLinkToLastPage = PagedListDisplayMode.Always,
+       DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+       DisplayLinkToNextPage = PagedListDisplayMode.Always,
+       Display = PagedListDisplayMode.Always
+   })
     </div>
-   
+
 
 </div>

@@ -1,90 +1,34 @@
 ﻿@model Lab4ProyectoFinal.Models.Domicilio
 
 @{
-    ViewData["Title"] = "Agregar Domicilio";
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container my-5">
-    <h1 class="text-center mb-4">Agregar Domicilio</h1>
-    <hr />
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <form asp-action="Create" class="p-4 shadow-sm rounded bg-light">
-                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+<h1>Create</h1>
 
-                <div class="form-group mb-3">
-                    <label asp-for="Calle" class="form-label">Calle</label>
-                    <input asp-for="Calle" class="form-control" placeholder="Ej: Avenida Siempre Viva 742" />
-                    <span asp-validation-for="Calle" class="text-danger"></span>
-                </div>
-
-                <div class="text-center mt-4">
-                    <input type="submit" value="Agregar" class="btn btn-primary me-2" />
-                    <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
-                </div>
-            </form>
-        </div>
+<h4>Domicilio</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Calle" class="control-label"></label>
+                <input asp-for="Calle" class="form-control" />
+                <span asp-validation-for="Calle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
     </div>
 </div>
 
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
-
-<style>
-    h1 {
-        font-size: 2.5rem;
-        color: #2c3e50;
-        margin-bottom: 20px;
-    }
-
-    .form-group label {
-        font-weight: bold;
-        color: #2c3e50;
-    }
-
-    .form-control {
-        border-radius: 0.5rem;
-        border: 1px solid #ced4da;
-        padding: 0.75rem;
-        font-size: 1rem;
-    }
-
-        .form-control:focus {
-            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-        }
-
-    .btn-primary {
-        background-color: #3498db;
-        border-color: #2980b9;
-        padding: 0.75rem 1.5rem;
-        font-size: 1.1rem;
-        border-radius: 0.5rem;
-    }
-
-        .btn-primary:hover {
-            background-color: #2980b9;
-            border-color: #1f6e97;
-        }
-
-    .btn-secondary {
-        padding: 0.75rem 1.5rem;
-        font-size: 1.1rem;
-        border-radius: 0.5rem;
-    }
-
-    .text-danger {
-        font-size: 0.9rem;
-        margin-top: 5px;
-    }
-
-    .bg-light {
-        background-color: #f8f9fa !important;
-    }
-
-    .shadow-sm {
-        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-    }
-</style>

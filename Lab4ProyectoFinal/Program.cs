@@ -1,9 +1,10 @@
-using Lab4ProyectoFinal.Services;
+using Lab4ProyectoFinal.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace Lab4ProyectoFinal
 {
-	public class Program
+    public class Program
 	{
 		public static void Main(string[] args)
 		{
@@ -17,6 +18,8 @@ namespace Lab4ProyectoFinal
 				options.UseSqlServer(connectionString);
 			});
 
+   builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<AppDbContext>();
+
 			var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
@@ -28,16 +31,19 @@ namespace Lab4ProyectoFinal
 			}
 
 			app.UseHttpsRedirection();
+
 			app.UseStaticFiles();
 
 			app.UseRouting();
 
-			app.UseAuthorization();
+			app.UseAuthentication();
+
+            app.UseAuthorization();
 
 			app.MapControllerRoute(
 				name: "default",
 				pattern: "{controller=Productoes}/{action=Index}/{id?}");
-
+			app.MapRazorPages();
 			app.Run();
 		}
 	}

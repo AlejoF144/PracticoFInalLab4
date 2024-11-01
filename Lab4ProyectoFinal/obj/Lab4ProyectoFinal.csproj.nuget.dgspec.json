@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj": {}
+    "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj": {
+    "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj",
         "projectName": "Lab4ProyectoFinal",
-        "projectPath": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj",
+        "projectPath": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj",
         "packagesPath": "C:\\Users\\alejo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\Lab4ProyectoFinal\\Lab4ProyectoFinal\\obj\\",
+        "outputPath": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alejo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,6 +49,14 @@
             "ClosedXML": {
               "target": "Package",
               "version": "[0.104.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
