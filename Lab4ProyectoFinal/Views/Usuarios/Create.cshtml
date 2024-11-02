@@ -33,13 +33,18 @@
                 <span asp-validation-for="ImagenCarpeta" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TarjetaId" class="control-label"></label>
-                <input asp-for="TarjetaId" class="form-control" />
-                <span asp-validation-for="TarjetaId" class="text-danger"></span>
+                <label asp-for="DomicilioId" class="control-label"></label>
+                <select asp-for="DomicilioId" class="form-control" asp-items="ViewBag.DomicilioId">
+                    <option value="">Seleccione un domicilio</option>
+                </select>
+                <span asp-validation-for="DomicilioId" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="TarjetaId" class="control-label"></label>
-                <input asp-for="TarjetaId" class="form-control" />
+                <select asp-for="TarjetaId" class="form-control" asp-items="ViewBag.TarjetaId">
+                    <option value="">Seleccione una tarjeta</option>
+                </select>
                 <span asp-validation-for="TarjetaId" class="text-danger"></span>
             </div>
             <div class="form-group">

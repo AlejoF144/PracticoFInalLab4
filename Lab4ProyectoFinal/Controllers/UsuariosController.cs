@@ -22,6 +22,7 @@ namespace Lab4ProyectoFinal.Controllers
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
+            
             return View(await _context.Usuarios.ToListAsync());
         }
 
@@ -33,7 +34,8 @@ namespace Lab4ProyectoFinal.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuarios
+            var usuario = await _context.Usuarios //.Include(e => e.TarjetaId).Include(e => e.DomicilioId)
+
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (usuario == null)
             {
@@ -42,16 +44,15 @@ namespace Lab4ProyectoFinal.Controllers
 
             return View(usuario);
         }
-
         // GET: Usuarios/Create
         public IActionResult Create()
         {
+            ViewData["DomicilioId"] = new SelectList(_context.Domicilio, "Id", "Calle");
+            ViewData["TarjetaId"] = new SelectList(_context.MetodoDePagos, "Id", "NumeroDeTarjeta");
             return View();
         }
 
         // POST: Usuarios/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nombre,Nivel,Estado,ImagenCarpeta,TarjetaId,DomicilioId")] Usuario usuario)
@@ -62,6 +63,8 @@ namespace Lab4ProyectoFinal.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["DomicilioId"] = new SelectList(_context.UsuarioDomicilios, "Id", "Calle", usuario.DomicilioId);
+            ViewData["TarjetaId"] = new SelectList(_context.UsuarioTarjeta, "Id", "NumeroDeTarjeta", usuario.TarjetaId);
             return View(usuario);
         }
 
@@ -78,6 +81,8 @@ namespace Lab4ProyectoFinal.Controllers
             {
                 return NotFound();
             }
+            ViewData["DomicilioId"] = new SelectList(_context.Domicilio, "Id", "Calle");
+            ViewData["TarjetaId"] = new SelectList(_context.MetodoDePagos, "Id", "NumeroDeTarjeta");
             return View(usuario);
         }
 
@@ -113,6 +118,8 @@ namespace Lab4ProyectoFinal.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["DomicilioId"] = new SelectList(_context.Domicilio, "Id", "Calle");
+            ViewData["TarjetaId"] = new SelectList(_context.MetodoDePagos, "Id", "NumeroDeTarjeta");
             return View(usuario);
         }
 
@@ -124,7 +131,7 @@ namespace Lab4ProyectoFinal.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuarios
+            var usuario = await _context.Usuarios//Include(e => e.TarjetaId).Include(e  => e.DomicilioId)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (usuario == null)
             {
