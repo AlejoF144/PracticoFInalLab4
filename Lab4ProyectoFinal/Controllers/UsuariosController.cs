@@ -22,9 +22,14 @@ namespace Lab4ProyectoFinal.Controllers
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-            
-            return View(await _context.Usuarios.ToListAsync());
+            var usuarios = await _context.Usuarios
+                .Include(u => u.MetodoDePago)
+                .Include(u => u.Domicilio)
+                .ToListAsync();
+
+            return View(usuarios);
         }
+
 
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -34,9 +39,11 @@ namespace Lab4ProyectoFinal.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuarios //.Include(e => e.TarjetaId).Include(e => e.DomicilioId)
-
+            var usuario = await _context.Usuarios
+                .Include(u => u.MetodoDePago)
+                .Include(u => u.Domicilio)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (usuario == null)
             {
                 return NotFound();
@@ -44,18 +51,19 @@ namespace Lab4ProyectoFinal.Controllers
 
             return View(usuario);
         }
+
         // GET: Usuarios/Create
         public IActionResult Create()
         {
+            ViewData["MetodoDePagoId"] = new SelectList(_context.MetodoDePagos, "Id", "MarcaDeTarjeta");
             ViewData["DomicilioId"] = new SelectList(_context.Domicilio, "Id", "Calle");
-            ViewData["TarjetaId"] = new SelectList(_context.MetodoDePagos, "Id", "NumeroDeTarjeta");
             return View();
         }
 
         // POST: Usuarios/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Nivel,Estado,ImagenCarpeta,TarjetaId,DomicilioId")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("Id,Nombre,Nivel,Estado,ImagenCarpeta,MetodoDePagoId,DomicilioId")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -63,8 +71,8 @@ namespace Lab4ProyectoFinal.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DomicilioId"] = new SelectList(_context.UsuarioDomicilios, "Id", "Calle", usuario.DomicilioId);
-            ViewData["TarjetaId"] = new SelectList(_context.UsuarioTarjeta, "Id", "NumeroDeTarjeta", usuario.TarjetaId);
+            ViewData["MetodoDePagoId"] = new SelectList(_context.MetodoDePagos, "Id", "MarcaDeTarjeta", usuario.MetodoDePagoId);
+            ViewData["DomicilioId"] = new SelectList(_context.Domicilio, "Id", "Calle", usuario.DomicilioId);
             return View(usuario);
         }
 
@@ -76,22 +84,28 @@ namespace Lab4ProyectoFinal.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuarios.FindAsync(id);
+            var usuario = await _context.Usuarios
+                .Include(u => u.MetodoDePago)
+                .Include(u => u.Domicilio)
+                .FirstOrDefaultAsync(m => m.Id == id);
+
             if (usuario == null)
             {
                 return NotFound();
             }
-            ViewData["DomicilioId"] = new SelectList(_context.Domicilio, "Id", "Calle");
-            ViewData["TarjetaId"] = new SelectList(_context.MetodoDePagos, "Id", "NumeroDeTarjeta");
+
+            ViewData["MetodoDePagoId"] = new SelectList(_context.MetodoDePagos, "Id", "MarcaDeTarjeta", usuario.MetodoDePagoId);
+            ViewData["DomicilioId"] = new SelectList(_context.Domicilio, "Id", "Calle", usuario.DomicilioId);
             return View(usuario);
         }
+
 
         // POST: Usuarios/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Nivel,Estado,ImagenCarpeta,TarjetaId,DomicilioId")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Nivel,Estado,ImagenCarpeta,MetodoDePagoId,DomicilioId")] Usuario usuario)
         {
             if (id != usuario.Id)
             {
@@ -118,8 +132,8 @@ namespace Lab4ProyectoFinal.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DomicilioId"] = new SelectList(_context.Domicilio, "Id", "Calle");
-            ViewData["TarjetaId"] = new SelectList(_context.MetodoDePagos, "Id", "NumeroDeTarjeta");
+            ViewData["DomicilioId"] = new SelectList(_context.Domicilio, "Id", "Id", usuario.DomicilioId);
+            ViewData["MetodoDePagoId"] = new SelectList(_context.MetodoDePagos, "Id", "Id", usuario.MetodoDePagoId);
             return View(usuario);
         }
 
@@ -131,8 +145,11 @@ namespace Lab4ProyectoFinal.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuarios//Include(e => e.TarjetaId).Include(e  => e.DomicilioId)
+            var usuario = await _context.Usuarios
+                .Include(u => u.MetodoDePago)
+                .Include(u => u.Domicilio)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (usuario == null)
             {
                 return NotFound();
@@ -140,6 +157,7 @@ namespace Lab4ProyectoFinal.Controllers
 
             return View(usuario);
         }
+
 
         // POST: Usuarios/Delete/5
         [HttpPost, ActionName("Delete")]

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Lab4ProyectoFinal.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241101224338_2daMigration")]
-    partial class _2daMigration
+    [Migration("20241103185730_Inicial")]
+    partial class Inicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -105,7 +105,7 @@ namespace Lab4ProyectoFinal.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("DomicilioId")
+                    b.Property<int?>("DomicilioId")
                         .HasColumnType("int");
 
                     b.Property<bool>("Estado")
@@ -123,10 +123,9 @@ namespace Lab4ProyectoFinal.Migrations
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TarjetaId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("DomicilioId");
 
                     b.HasIndex("MetodoDePagoId");
 
@@ -367,6 +366,10 @@ namespace Lab4ProyectoFinal.Migrations
 
             modelBuilder.Entity("Lab4ProyectoFinal.Models.Usuario", b =>
                 {
+                    b.HasOne("Lab4ProyectoFinal.Models.Domicilio", null)
+                        .WithMany("Usuarios")
+                        .HasForeignKey("DomicilioId");
+
                     b.HasOne("Lab4ProyectoFinal.Models.MetodoDePago", null)
                         .WithMany("Usuarios")
                         .HasForeignKey("MetodoDePagoId");
@@ -375,7 +378,7 @@ namespace Lab4ProyectoFinal.Migrations
             modelBuilder.Entity("Lab4ProyectoFinal.Models.UsuarioDomicilio", b =>
                 {
                     b.HasOne("Lab4ProyectoFinal.Models.Domicilio", "Domicilio")
-                        .WithMany("Usuarios")
+                        .WithMany()
                         .HasForeignKey("DomicilioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

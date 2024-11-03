@@ -10,57 +10,58 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nivel)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Estado)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ImagenCarpeta)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TarjetaId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DomicilioId)
-            </th>
+            <th>@Html.DisplayNameFor(model => model.Nombre)</th>
+            <th>@Html.DisplayNameFor(model => model.Nivel)</th>
+            <th>@Html.DisplayNameFor(model => model.Estado)</th>
+            <th>@Html.DisplayNameFor(model => model.ImagenCarpeta)</th>
+            <th>Método de Pago</th>
+            <th>Domicilio</th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nivel)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Estado)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ImagenCarpeta)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TarjetaId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DomicilioId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+                <td>@Html.DisplayFor(modelItem => item.Nivel)</td>
+                <td>@Html.DisplayFor(modelItem => item.Estado)</td>
+                <td><img src="/Fotos/@item.ImagenCarpeta" class="img-fluid" style="max-width: 100px;" /></td>
+
+                <!-- Muestra los detalles de Método de Pago y Domicilio -->
+                <td>
+                    @if (item.MetodoDePago != null)
+                    {
+                        @item.MetodoDePago.MarcaDeTarjeta
+                        @item.MetodoDePago.NumeroDeTarjeta
+                    }
+                    else
+                    {
+                        <span>No especificado</span>
+                    }
+                </td>
+
+                <td>
+                    @if (item.Domicilio != null)
+                    {
+                        @item.Domicilio.Calle
+                    }
+                    else
+                    {
+                        <span>No especificado</span>
+                    }
+                </td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

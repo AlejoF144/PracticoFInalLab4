@@ -35,17 +35,17 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.ImagenCarpeta)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TarjetaId)
+        <dt class="col-sm-2">Método de Pago
+
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TarjetaId)
+        <dd class="col-sm-10">
+            @Model.MetodoDePago?.MarcaDeTarjeta - @Model.MetodoDePago?.NumeroDeTarjeta
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DomicilioId)
+        <dt class="col-sm-2">
+            Domicilio
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DomicilioId)
+        <dd class="col-sm-10">
+            @Model.Domicilio?.Calle
         </dd>
     </dl>
 </div>

@@ -35,20 +35,17 @@
                 <span asp-validation-for="ImagenCarpeta" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DomicilioId" class="control-label"></label>
-                <select asp-for="DomicilioId" class="form-control" asp-items="ViewBag.DomicilioId">
-                    <option value="">Seleccione un domicilio</option>
-                </select>
-                <span asp-validation-for="DomicilioId" class="text-danger"></span>
+                <label asp-for="MetodoDePagoId" class="control-label">Método de Pago</label>
+                @Html.DropDownList("MetodoDePagoId", (SelectList)ViewData["MetodoDePagoId"], "Selecciona un Método de Pago", new { @class = "form-control" })
+                <span asp-validation-for="MetodoDePagoId" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="TarjetaId" class="control-label"></label>
-                <select asp-for="TarjetaId" class="form-control" asp-items="ViewBag.TarjetaId">
-                    <option value="">Seleccione una tarjeta</option>
-                </select>
-                <span asp-validation-for="TarjetaId" class="text-danger"></span>
+                <label asp-for="DomicilioId" class="control-label">Domicilio</label>
+                @Html.DropDownList("DomicilioId", (SelectList)ViewData["DomicilioId"], "Selecciona un Domicilio", new { @class = "form-control" })
+                <span asp-validation-for="DomicilioId" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>

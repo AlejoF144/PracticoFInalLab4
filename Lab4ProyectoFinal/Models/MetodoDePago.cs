@@ -7,6 +7,7 @@
         public string? MarcaDeTarjeta { get; set; }
         public string? Expiracion { get; set; }
         public List<Usuario>? Usuarios { get; set; }
+
     }
 }
 

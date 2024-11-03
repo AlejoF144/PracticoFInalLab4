@@ -213,13 +213,17 @@ namespace Lab4ProyectoFinal.Migrations
                     Nivel = table.Column<int>(type: "int", nullable: false),
                     Estado = table.Column<bool>(type: "bit", nullable: false),
                     ImagenCarpeta = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    TarjetaId = table.Column<int>(type: "int", nullable: false),
-                    DomicilioId = table.Column<int>(type: "int", nullable: false),
+                    DomicilioId = table.Column<int>(type: "int", nullable: true),
                     MetodoDePagoId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Usuarios", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Usuarios_Domicilio_DomicilioId",
+                        column: x => x.DomicilioId,
+                        principalTable: "Domicilio",
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Usuarios_MetodoDePagos_MetodoDePagoId",
                         column: x => x.MetodoDePagoId,
@@ -320,6 +324,11 @@ namespace Lab4ProyectoFinal.Migrations
                 column: "DomicilioId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Usuarios_DomicilioId",
+                table: "Usuarios",
+                column: "DomicilioId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Usuarios_MetodoDePagoId",
                 table: "Usuarios",
                 column: "MetodoDePagoId");
@@ -364,10 +373,10 @@ namespace Lab4ProyectoFinal.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "Domicilio");
+                name: "Usuarios");
 
             migrationBuilder.DropTable(
-                name: "Usuarios");
+                name: "Domicilio");
 
             migrationBuilder.DropTable(
                 name: "MetodoDePagos");

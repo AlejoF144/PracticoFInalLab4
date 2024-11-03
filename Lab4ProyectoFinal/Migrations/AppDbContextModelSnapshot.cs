@@ -102,7 +102,7 @@ namespace Lab4ProyectoFinal.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("DomicilioId")
+                    b.Property<int?>("DomicilioId")
                         .HasColumnType("int");
 
                     b.Property<bool>("Estado")
@@ -120,10 +120,9 @@ namespace Lab4ProyectoFinal.Migrations
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TarjetaId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("DomicilioId");
 
                     b.HasIndex("MetodoDePagoId");
 
@@ -364,21 +363,29 @@ namespace Lab4ProyectoFinal.Migrations
 
             modelBuilder.Entity("Lab4ProyectoFinal.Models.Usuario", b =>
                 {
-                    b.HasOne("Lab4ProyectoFinal.Models.MetodoDePago", null)
+                    b.HasOne("Lab4ProyectoFinal.Models.Domicilio", "Domicilio")
+                        .WithMany("Usuarios")
+                        .HasForeignKey("DomicilioId");
+
+                    b.HasOne("Lab4ProyectoFinal.Models.MetodoDePago", "MetodoDePago")
                         .WithMany("Usuarios")
                         .HasForeignKey("MetodoDePagoId");
+
+                    b.Navigation("Domicilio");
+
+                    b.Navigation("MetodoDePago");
                 });
 
             modelBuilder.Entity("Lab4ProyectoFinal.Models.UsuarioDomicilio", b =>
                 {
                     b.HasOne("Lab4ProyectoFinal.Models.Domicilio", "Domicilio")
-                        .WithMany("Usuarios")
+                        .WithMany()
                         .HasForeignKey("DomicilioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Lab4ProyectoFinal.Models.Usuario", "Usuario")
-                        .WithMany("UsuarioDomicilio")
+                        .WithMany()
                         .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -397,7 +404,7 @@ namespace Lab4ProyectoFinal.Migrations
                         .IsRequired();
 
                     b.HasOne("Lab4ProyectoFinal.Models.Usuario", "Usuario")
-                        .WithMany("UsuarioTarjeta")
+                        .WithMany()
                         .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -466,13 +473,6 @@ namespace Lab4ProyectoFinal.Migrations
             modelBuilder.Entity("Lab4ProyectoFinal.Models.MetodoDePago", b =>
                 {
                     b.Navigation("Usuarios");
-                });
-
-            modelBuilder.Entity("Lab4ProyectoFinal.Models.Usuario", b =>
-                {
-                    b.Navigation("UsuarioDomicilio");
-
-                    b.Navigation("UsuarioTarjeta");
                 });
 #pragma warning restore 612, 618
         }

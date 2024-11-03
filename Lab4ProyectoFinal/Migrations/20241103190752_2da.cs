@@ -5,7 +5,7 @@
 namespace Lab4ProyectoFinal.Migrations
 {
     /// <inheritdoc />
-    public partial class _2daMigration : Migration
+    public partial class _2da : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
