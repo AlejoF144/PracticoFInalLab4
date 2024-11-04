@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Lab4ProyectoFinal.Data;
 using Lab4ProyectoFinal.Models;
+using X.PagedList.Extensions;
+
 
 namespace Lab4ProyectoFinal.Controllers
 {
@@ -20,16 +22,28 @@ namespace Lab4ProyectoFinal.Controllers
         }
 
         // GET: Usuarios
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string buscarUsuario, int? page)
         {
-            var usuarios = await _context.Usuarios
+            int pageSize = 6;
+            int pageNumber = page ?? 1;
+
+            var usuarios = _context.Usuarios
                 .Include(u => u.MetodoDePago)
                 .Include(u => u.Domicilio)
-                .ToListAsync();
+                .AsQueryable();
 
-            return View(usuarios);
+            // Filtrar los usuarios según el término de búsqueda
+            if (!string.IsNullOrEmpty(buscarUsuario))
+            {
+                usuarios = usuarios.Where(u => u.Nombre!.Contains(buscarUsuario));
+            }
+
+            // Ordenar por el más reciente y aplicar paginación
+            var UsuariosPaginados = usuarios.OrderByDescending(p => p.Id).ToPagedList(pageNumber, pageSize);
+
+            return View(UsuariosPaginados);
+
         }
-
 
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int? id)

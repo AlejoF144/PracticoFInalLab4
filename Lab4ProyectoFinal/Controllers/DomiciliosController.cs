@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Lab4ProyectoFinal.Data;
 using Lab4ProyectoFinal.Models;
+using X.PagedList.Extensions;
 
 namespace Lab4ProyectoFinal.Controllers
 {
@@ -20,9 +21,23 @@ namespace Lab4ProyectoFinal.Controllers
         }
 
         // GET: Domicilios
-        public async Task<IActionResult> Index()
+        public IActionResult Index(string buscarDomicilio, int? page)
         {
-            return View(await _context.Domicilio.ToListAsync());
+            int pageSize = 6;
+            int pageNumber = page ?? 1;
+
+            var domicilios = from domicilio in _context.Domicilio select domicilio;
+
+            // Filtrar los productos según el término de búsqueda
+            if (!string.IsNullOrEmpty(buscarDomicilio))
+            {
+                domicilios = domicilios.Where(s => s.Calle!.Contains(buscarDomicilio));
+            }
+            //Mas nuevo se ve primero
+            var DomiciliosPaginadas = domicilios.OrderByDescending(p => p.Id).ToPagedList(pageNumber, pageSize);
+
+
+            return View(DomiciliosPaginadas);
         }
 
         // GET: Domicilios/Details/5

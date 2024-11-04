@@ -1,11 +1,16 @@
-﻿@model IEnumerable<Lab4ProyectoFinal.Models.Domicilio>
+﻿@model X.PagedList.IPagedList<Lab4ProyectoFinal.Models.Domicilio>
+@using X.PagedList.Mvc.Core
 
-@{
-    ViewData["Title"] = "Lista de Domicilios";
-}
 
 <div class="container my-5">
     <h1 class="text-center mb-4">Lista de Domicilios</h1>
+
+    <form asp-controller="Domicilios" asp-action="Index">
+        <p>
+            Buscar por calle: <input type="text" name="buscarDomicilio" class="form-text" />
+            <input type="submit" value="Buscar" class="btn btn-sm btn-dark" />
+        </p>
+    </form>
 
     <div class="text-end mb-3">
         <a asp-action="Create" class="btn btn-primary">Agregar Nuevo Domicilio</a>
@@ -36,4 +41,22 @@
             </table>
         </div>
     </div>
+    <div class="pagination-container mt-4">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions
+   {
+       UlElementClasses = new[] { "pagination", "justify-content-center" },
+       LiElementClasses = new[] { "page-item" },
+       PageClasses = new[] { "page-link" },
+       ActiveLiElementClass = "active",
+       LinkToPreviousPageFormat = "Anterior",
+       LinkToNextPageFormat = "Siguiente",
+       LinkToFirstPageFormat = "Primera",
+       LinkToLastPageFormat = "Última",
+       DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+       DisplayLinkToLastPage = PagedListDisplayMode.Always,
+       DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+       DisplayLinkToNextPage = PagedListDisplayMode.Always,
+       Display = PagedListDisplayMode.Always
+   })
+    </div>s
 </div>

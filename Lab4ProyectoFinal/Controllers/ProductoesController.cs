@@ -23,7 +23,7 @@ namespace Lab4ProyectoFinal.Controllers
         // GET: Productoes
         public IActionResult Index(string buscarProducto, int? page)
         {
-            int pageSize = 3;
+            int pageSize = 6;
             int pageNumber = page ?? 1;
 
             var productos = from producto in _context.Productos select producto;

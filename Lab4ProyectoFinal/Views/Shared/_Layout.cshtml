@@ -24,20 +24,22 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Productoes" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Domicilios" asp-action="Create">Agregar Domicilio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="MetodoDePagoes" asp-action="Create">Agregar Método de Pago</a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Productoes" asp-action="Create">Agregar Producto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="ImportarExcel" asp-action="Index">Importar Excel</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Agregar
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Productoes" asp-action="Create">Producto</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="ImportarExcel" asp-action="Index">Importar Excel</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Domicilios" asp-action="Create">Domicilio</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="MetodoDePagoes" asp-action="Create">Tarjeta</a></li>
+
+
+                            </ul>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
@@ -65,7 +67,7 @@
 </html>
 <style>
     .navbar-custom {
-        background-color: #003366; 
+        background-color: #003366;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 

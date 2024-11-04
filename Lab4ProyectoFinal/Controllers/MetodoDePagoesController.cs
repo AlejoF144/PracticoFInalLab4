@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Lab4ProyectoFinal.Data;
 using Lab4ProyectoFinal.Models;
+using X.PagedList.Extensions;
 
 namespace Lab4ProyectoFinal.Controllers
 {
@@ -20,9 +21,23 @@ namespace Lab4ProyectoFinal.Controllers
         }
 
         // GET: MetodoDePagoes
-        public async Task<IActionResult> Index()
+        public IActionResult Index(string buscarTarjeta, int? page)
         {
-            return View(await _context.MetodoDePagos.ToListAsync());
+            int pageSize = 6;
+            int pageNumber = page ?? 1;
+
+            var tarjetas = from tarjeta in _context.MetodoDePagos select tarjeta;
+
+            // Filtrar los productos según el término de búsqueda
+            if (!string.IsNullOrEmpty(buscarTarjeta))
+            {
+                tarjetas = tarjetas.Where(s => s.MarcaDeTarjeta!.Contains(buscarTarjeta));
+            }
+            //Mas nuevo se ve primero
+            var TarjetasPaginadas = tarjetas.OrderByDescending(p => p.Id).ToPagedList(pageNumber, pageSize);
+
+
+            return View(TarjetasPaginadas);
         }
 
         // GET: MetodoDePagoes/Details/5

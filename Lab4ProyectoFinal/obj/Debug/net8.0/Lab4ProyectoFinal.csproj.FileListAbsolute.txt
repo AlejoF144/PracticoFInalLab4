@@ -813,7 +813,6 @@ C:\Users\alejo\Desktop\Colegio\Tarea facu\PracticoFinalLab4\Lab4ProyectoFinal\ob
 C:\Users\alejo\Desktop\Colegio\Tarea facu\PracticoFinalLab4\Lab4ProyectoFinal\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Lab4ProyectoFinal.props
 C:\Users\alejo\Desktop\Colegio\Tarea facu\PracticoFinalLab4\Lab4ProyectoFinal\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Lab4ProyectoFinal.props
 C:\Users\alejo\Desktop\Colegio\Tarea facu\PracticoFinalLab4\Lab4ProyectoFinal\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\alejo\Desktop\Colegio\Tarea facu\PracticoFinalLab4\Lab4ProyectoFinal\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\alejo\Desktop\Colegio\Tarea facu\PracticoFinalLab4\Lab4ProyectoFinal\obj\Debug\net8.0\scopedcss\bundle\Lab4ProyectoFinal.styles.css
 C:\Users\alejo\Desktop\Colegio\Tarea facu\PracticoFinalLab4\Lab4ProyectoFinal\obj\Debug\net8.0\scopedcss\projectbundle\Lab4ProyectoFinal.bundle.scp.css
 C:\Users\alejo\Desktop\Colegio\Tarea facu\PracticoFinalLab4\Lab4ProyectoFinal\obj\Debug\net8.0\Lab4Proy.31467027.Up2Date
@@ -822,3 +821,4 @@ C:\Users\alejo\Desktop\Colegio\Tarea facu\PracticoFinalLab4\Lab4ProyectoFinal\ob
 C:\Users\alejo\Desktop\Colegio\Tarea facu\PracticoFinalLab4\Lab4ProyectoFinal\obj\Debug\net8.0\Lab4ProyectoFinal.pdb
 C:\Users\alejo\Desktop\Colegio\Tarea facu\PracticoFinalLab4\Lab4ProyectoFinal\obj\Debug\net8.0\Lab4ProyectoFinal.genruntimeconfig.cache
 C:\Users\alejo\Desktop\Colegio\Tarea facu\PracticoFinalLab4\Lab4ProyectoFinal\obj\Debug\net8.0\ref\Lab4ProyectoFinal.dll
+C:\Users\alejo\Desktop\Colegio\Tarea facu\PracticoFinalLab4\Lab4ProyectoFinal\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css

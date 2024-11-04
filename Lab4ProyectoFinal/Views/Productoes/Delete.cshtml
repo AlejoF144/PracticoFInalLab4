@@ -32,7 +32,7 @@
                 <dd class="col-sm-9">@Html.DisplayFor(model => model.Descripcion)</dd>
 
                 <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.ImagenCarpeta)</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.ImagenCarpeta)</dd>
+                <dd class="col-sm-9"> <img src="/Fotos/@Html.DisplayFor(model => model.ImagenCarpeta)" alt="Imagen del producto" class="img-fluid rounded" style="max-width: 300px;"  /> </dd>
             </dl>
         </div>
     </div>
