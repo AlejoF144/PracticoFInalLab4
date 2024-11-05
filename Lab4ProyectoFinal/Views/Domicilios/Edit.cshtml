@@ -1,30 +1,24 @@
 ﻿@model Lab4ProyectoFinal.Models.Domicilio
 
-@{
-    ViewData["Title"] = "Editar Domicilio";
-}
-
-<div class="container my-5">
-    <h1 class="text-center mb-4">Editar Domicilio</h1>
-
-    <div class="card shadow-sm">
-        <div class="card-header bg-primary text-white">
-            <h4 class="mb-0">Modificar Información del Domicilio</h4>
-        </div>
+<div class="container my-5 d-flex justify-content-center">
+    <div class="form-container card shadow-sm">
+        <br />
+        <h1 class="text-center mb-4">Editar Domicilio</h1>
+        
         <div class="card-body">
-            <form asp-action="Edit" class="needs-validation" novalidate>
-                <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+            <form asp-action="Edit" class="p-3 needs-validation" novalidate>
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger mb-3"></div>
                 <input type="hidden" asp-for="Id" />
 
-                <div class="mb-3">
+                <div class="form-group mb-3">
                     <label asp-for="Calle" class="form-label fw-bold">Calle</label>
                     <input asp-for="Calle" class="form-control" placeholder="Ingrese la calle" />
                     <span asp-validation-for="Calle" class="text-danger"></span>
                 </div>
 
-                <div class="d-flex justify-content-center mt-4">
-                    <button type="submit" class="btn btn-success me-2">Guardar</button>
-                    <a asp-action="Index" class="btn btn-outline-secondary">Volver a la lista</a>
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary me-2">Guardar</button>
+                    <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
                 </div>
             </form>
         </div>
@@ -37,3 +31,61 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
+<style>
+    .form-container {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+
+    .card-header h4 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .form-group label {
+        font-weight: bold;
+        color: #2c3e50;
+    }
+
+    .form-control {
+        border-radius: 0.5rem;
+        border: 1px solid #ced4da;
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+    .btn-primary {
+        background-color: #3498db;
+        border-color: #2980b9;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+        border-radius: 0.5rem;
+    }
+
+    .btn-secondary {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+        border-radius: 0.5rem;
+    }
+
+    .text-danger {
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+
+    .shadow-sm {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    }
+</style>

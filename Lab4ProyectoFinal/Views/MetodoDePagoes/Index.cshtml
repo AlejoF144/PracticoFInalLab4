@@ -7,16 +7,10 @@
 <div class="container my-5">
     <h1 class="text-center mb-4">Lista de Métodos de Pago</h1>
 
-    <form asp-controller="MetodoDePagoes" asp-action="Index">
-        <p>
-            Buscar por marca: <input type="text" name="buscarTarjeta" class="form-text" />
-            <input type="submit" value="Buscar" class="btn btn-sm btn-dark" />
-        </p>
+    <form asp-controller="MetodoDePagoes" asp-action="Index" class="d-flex align-items-center mb-3">
+        <input type="text" name="buscarTarjeta" id="buscarTarjeta" class="form-control form-control-sm me-2" placeholder="Nombre de la marca" />
+        <button type="submit" class="btn btn-dark btn-sm">BUSCAR</button>
     </form>
-
-    <div class="text-end mb-3">
-        <a asp-action="Create" class="btn btn-primary">Agregar Nuevo</a>
-    </div>
 
     <div class="card shadow-sm">
         <div class="card-body p-0">

@@ -1,68 +1,63 @@
 ﻿@model Lab4ProyectoFinal.Models.Producto
 
-<h1 class="text-center mb-4">Editar los datos de un producto</h1>
+<div class="container my-5">
+    <h1 class="text-center mb-4">Editar los datos de un producto</h1>
+    <hr />
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Edit" class="p-4 shadow-sm rounded bg-light">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                <input type="hidden" asp-for="Id" />
 
-<hr />
+                <div class="form-group mb-3">
+                    <label asp-for="Nombre" class="form-label fw-bold"></label>
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
 
-<div class="row justify-content-center">
-    <div class="col-md-6">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                <div class="form-group mb-3">
+                    <label asp-for="Marca" class="form-label fw-bold"></label>
+                    <input asp-for="Marca" class="form-control" />
+                    <span asp-validation-for="Marca" class="text-danger"></span>
+                </div>
 
-            <input type="hidden" asp-for="Id" />
+                <div class="form-group mb-3">
+                    <label asp-for="Precio" class="form-label fw-bold"></label>
+                    <input asp-for="Precio" class="form-control" />
+                    <span asp-validation-for="Precio" class="text-danger"></span>
+                </div>
 
-            <div class="mb-3">
-                <label asp-for="Nombre" class="form-label"></label>
-                <input asp-for="Nombre" class="form-control" />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
-            </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Categoria" class="form-label fw-bold"></label>
+                    <input asp-for="Categoria" class="form-control" />
+                    <span asp-validation-for="Categoria" class="text-danger"></span>
+                </div>
 
-            <div class="mb-3">
-                <label asp-for="Marca" class="form-label"></label>
-                <input asp-for="Marca" class="form-control" />
-                <span asp-validation-for="Marca" class="text-danger"></span>
-            </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Tamaño" class="form-label fw-bold"></label>
+                    <input asp-for="Tamaño" class="form-control" />
+                    <span asp-validation-for="Tamaño" class="text-danger"></span>
+                </div>
 
-            <div class="mb-3">
-                <label asp-for="Precio" class="form-label"></label>
-                <input asp-for="Precio" class="form-control" />
-                <span asp-validation-for="Precio" class="text-danger"></span>
-            </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Descripcion" class="form-label fw-bold"></label>
+                    <input asp-for="Descripcion" class="form-control" />
+                    <span asp-validation-for="Descripcion" class="text-danger"></span>
+                </div>
 
-            <div class="mb-3">
-                <label asp-for="Categoria" class="form-label"></label>
-                <input asp-for="Categoria" class="form-control" />
-                <span asp-validation-for="Categoria" class="text-danger"></span>
-            </div>
+                <div class="form-group mb-3">
+                    <label asp-for="ImagenCarpeta" class="form-label fw-bold">Dirección Imagen</label>
+                    <input asp-for="ImagenCarpeta" class="form-control" />
+                    <span asp-validation-for="ImagenCarpeta" class="text-danger"></span>
+                </div>
 
-            <div class="mb-3">
-                <label asp-for="Tamaño" class="form-label"></label>
-                <input asp-for="Tamaño" class="form-control" />
-                <span asp-validation-for="Tamaño" class="text-danger"></span>
-            </div>
-
-            <div class="mb-3">
-                <label asp-for="Descripcion" class="form-label"></label>
-                <input asp-for="Descripcion" class="form-control" />
-                <span asp-validation-for="Descripcion" class="text-danger"></span>
-            </div>
-
-            <div class="mb-3">
-                <label asp-for="ImagenCarpeta" class="form-label">Direccion Imagen</label>
-                <input asp-for="ImagenCarpeta" class="form-control" />
-                <span asp-validation-for="ImagenCarpeta" class="text-danger"></span>
-            </div>
-
-            <div class="d-grid gap-2">
-                <input type="submit" value="Guardar" class="btn btn-primary" />
-            </div>
-        </form>
+                <div class="text-center mt-4">
+                    <input type="submit" value="Guardar" class="btn btn-primary me-2" />
+                    <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
-
-<div class="text-center mt-3">
-    <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
-</div>
 </div>
 
 @section Scripts {
@@ -70,3 +65,55 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+<style>
+    h1 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        font-weight: bold;
+        color: #2c3e50;
+    }
+
+    .form-control, .form-select {
+        border-radius: 0.5rem;
+        border: 1px solid #ced4da;
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+
+        .form-control:focus, .form-select:focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+    .btn-primary {
+        background-color: #3498db;
+        border-color: #2980b9;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+        border-radius: 0.5rem;
+    }
+
+
+
+    .btn-secondary {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+        border-radius: 0.5rem;
+    }
+
+    .text-danger {
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+
+    .bg-light {
+        background-color: #f8f9fa !important;
+    }
+
+    .shadow-sm {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    }
+</style>

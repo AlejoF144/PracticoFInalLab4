@@ -1,62 +1,114 @@
 ﻿@model Lab4ProyectoFinal.Models.Usuario
 
-@{
-    ViewData["Title"] = "Edit";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+<div class="container my-5">
+    <h1 class="text-center mb-4">Editar Usuario</h1>
+    <hr />
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Edit" class="p-4 shadow-sm rounded bg-light">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                <input type="hidden" asp-for="Id" />
 
-<h1>Edit</h1>
+                <div class="form-group mb-3">
+                    <label asp-for="Nombre" class="form-label fw-bold"></label>
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
 
-<h4>Usuario</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
-                <input asp-for="Nombre" class="form-control" />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Nivel" class="control-label"></label>
-                <input asp-for="Nivel" class="form-control" />
-                <span asp-validation-for="Nivel" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Estado" /> @Html.DisplayNameFor(model => model.Estado)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="ImagenCarpeta" class="control-label"></label>
-                <input asp-for="ImagenCarpeta" class="form-control" />
-                <span asp-validation-for="ImagenCarpeta" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MetodoDePagoId" class="control-label">Método de Pago</label>
-                @Html.DropDownList("MetodoDePagoId", (SelectList)ViewData["MetodoDePagoId"], "Selecciona un Método de Pago", new { @class = "form-control" })
-                <span asp-validation-for="MetodoDePagoId" class="text-danger"></span>
-            </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Nivel" class="form-label fw-bold"></label>
+                    <input asp-for="Nivel" class="form-control" />
+                    <span asp-validation-for="Nivel" class="text-danger"></span>
+                </div>
 
-            <div class="form-group">
-                <label asp-for="DomicilioId" class="control-label">Domicilio</label>
-                @Html.DropDownList("DomicilioId", (SelectList)ViewData["DomicilioId"], "Selecciona un Domicilio", new { @class = "form-control" })
-                <span asp-validation-for="DomicilioId" class="text-danger"></span>
-            </div>
+                <div class="form-group mb-3">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Estado" /> @Html.DisplayNameFor(model => model.Estado)
+                    </label>
+                </div>
 
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+                <div class="form-group mb-3">
+                    <label asp-for="ImagenCarpeta" class="form-label fw-bold"></label>
+                    <input asp-for="ImagenCarpeta" class="form-control" />
+                    <span asp-validation-for="ImagenCarpeta" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="MetodoDePagoId" class="form-label fw-bold">Método de Pago</label>
+                    @Html.DropDownList("MetodoDePagoId", (SelectList)ViewData["MetodoDePagoId"], "Selecciona un Método de Pago", new { @class = "form-select" })
+                    <span asp-validation-for="MetodoDePagoId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="DomicilioId" class="form-label fw-bold">Domicilio</label>
+                    @Html.DropDownList("DomicilioId", (SelectList)ViewData["DomicilioId"], "Selecciona un Domicilio", new { @class = "form-select" })
+                    <span asp-validation-for="DomicilioId" class="text-danger"></span>
+                </div>
+
+                <div class="text-center mt-4">
+                    <input type="submit" value="Guardar" class="btn btn-primary me-2" />
+                    <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
+
+<style>
+    h1 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        font-weight: bold;
+        color: #2c3e50;
+    }
+
+    .form-control, .form-select {
+        border-radius: 0.5rem;
+        border: 1px solid #ced4da;
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+
+        .form-control:focus, .form-select:focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+    .btn-primary {
+        background-color: #3498db;
+        border-color: #2980b9;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+        border-radius: 0.5rem;
+    }
+
+      
+
+    .btn-secondary {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+        border-radius: 0.5rem;
+    }
+
+    .text-danger {
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+
+    .bg-light {
+        background-color: #f8f9fa !important;
+    }
+
+    .shadow-sm {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    }
+</style>

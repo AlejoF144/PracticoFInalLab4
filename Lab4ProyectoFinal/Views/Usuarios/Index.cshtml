@@ -5,17 +5,10 @@
 <div class="container my-5">
     <h1 class="text-center mb-4">Lista de Usuarios</h1>
 
-    <form asp-controller="Usuarios" asp-action="Index">
-        <p>
-            Buscar por nombre de usuario: <input type="text" name="buscarUsuario" class="form-text" />
-            <input type="submit" value="Buscar" class="btn btn-sm btn-dark" />
-        </p>
+    <form asp-controller="Usuarios" asp-action="Index" class="d-flex align-items-center mb-3">
+        <input type="text" name="buscarUsuario" id="buscarUsuario" class="form-control form-control-sm me-2" placeholder="Nombre del usuario" />
+        <button type="submit" class="btn btn-dark btn-sm">BUSCAR</button>
     </form>
-
-    <div class="text-end mb-3">
-        <a asp-action="Create" class="btn btn-primary">Crear Nuevo Usuario</a>
-    </div>
-
     <div class="card shadow-sm">
         <div class="card-body p-0">
             <table class="table table-striped mb-0">

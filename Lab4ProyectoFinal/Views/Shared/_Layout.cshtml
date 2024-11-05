@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-custom">
             <div class="container">
-                <a class="navbar-brand fw-bold" asp-area="" asp-controller="Productoes" asp-action="Index">
+                <a class="navbar-brand fw-bold" asp-area="" asp-controller="Home" asp-action="Index">
                     <i class="bi bi-box-seam"></i> Lab4ProyectoFinal
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -22,25 +22,33 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Productoes" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
-                        </li>
+                       
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Agregar
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" asp-area="" asp-controller="Productoes" asp-action="Create">Producto</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="ImportarExcel" asp-action="Index">Importar Excel</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="ImportarExcel" asp-action="Index">Importar Excel de productos</a></li>
                                 <li><a class="dropdown-item" asp-area="" asp-controller="Domicilios" asp-action="Create">Domicilio</a></li>
                                 <li><a class="dropdown-item" asp-area="" asp-controller="MetodoDePagoes" asp-action="Create">Tarjeta</a></li>
-
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Usuarios" asp-action="Create">Usuarios</a></li>
 
                             </ul>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Listas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Productoes" asp-action="Index">Productos</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Domicilios" asp-action="Index">Domicilio</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="MetodoDePagoes" asp-action="Index">Tarjeta</a></li>
+                            </ul>
+
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>

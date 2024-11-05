@@ -42,7 +42,7 @@ namespace Lab4ProyectoFinal
 
 			app.MapControllerRoute(
 				name: "default",
-				pattern: "{controller=Productoes}/{action=Index}/{id?}");
+				pattern: "{controller=Home}/{action=Index}/{id?}");
 			app.MapRazorPages();
 			app.Run();
 		}

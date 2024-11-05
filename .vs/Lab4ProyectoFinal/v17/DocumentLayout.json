@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\views\\productoes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\views\\productoes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\views\\productoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\views\\productoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\controllers\\metododepagoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\controllers\\metododepagoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\views\\domicilios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\views\\domicilios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\controllers\\domicilioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\controllers\\domicilioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\views\\metododepagoes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\views\\metododepagoes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\views\\metododepagoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\views\\metododepagoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|c:\\users\\alejo\\desktop\\colegio\\tarea facu\\practicofinallab4\\lab4proyectofinal\\views\\productoes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4380B214-65D2-4BBC-9471-A1296FD9A5B7}|Lab4ProyectoFinal\\Lab4ProyectoFinal.csproj|solutionrelative:lab4proyectofinal\\views\\productoes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,108 +33,72 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\MetodoDePagoes\\Index.cshtml",
-              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Views\\MetodoDePagoes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\MetodoDePagoes\\Index.cshtml",
-              "RelativeToolTip": "Lab4ProyectoFinal\\Views\\MetodoDePagoes\\Index.cshtml",
-              "ViewState": "AQIAABwAAAAAAAAAAAAcwEUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T23:24:02Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Lab4ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABoAAAAYAAAA",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Productoes\\Details.cshtml",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Views\\Productoes\\Details.cshtml",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Productoes\\Details.cshtml",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Views\\Productoes\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T23:37:31.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DomiciliosController.cs",
-              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Controllers\\DomiciliosController.cs",
-              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Controllers\\DomiciliosController.cs",
-              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Controllers\\DomiciliosController.cs",
-              "RelativeToolTip": "Lab4ProyectoFinal\\Controllers\\DomiciliosController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T23:32:14.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MetodoDePagoesController.cs",
-              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Controllers\\MetodoDePagoesController.cs",
-              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Controllers\\MetodoDePagoesController.cs",
-              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Controllers\\MetodoDePagoesController.cs",
-              "RelativeToolTip": "Lab4ProyectoFinal\\Controllers\\MetodoDePagoesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T23:32:08.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductoesController.cs",
-              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Controllers\\ProductoesController.cs",
-              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Controllers\\ProductoesController.cs",
-              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Controllers\\ProductoesController.cs",
-              "RelativeToolTip": "Lab4ProyectoFinal\\Controllers\\ProductoesController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T23:32:05.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "Lab4ProyectoFinal\\Controllers\\UsuariosController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAxwBoAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T23:31:50.097Z",
+              "WhenOpened": "2024-11-05T04:25:59.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Productoes\\Index.cshtml",
-              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Views\\Productoes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Productoes\\Index.cshtml",
-              "RelativeToolTip": "Lab4ProyectoFinal\\Views\\Productoes\\Index.cshtml",
-              "ViewState": "AQIAAC0AAAAAAAAAAADwv0sAAAAAAAAA",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAwwAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T23:18:17.406Z",
+              "WhenOpened": "2024-11-05T04:19:29.483Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Program.cs",
-              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Program.cs",
-              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Program.cs",
-              "RelativeToolTip": "Lab4ProyectoFinal\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T23:18:53.477Z",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Domicilios\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Views\\Domicilios\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Domicilios\\Edit.cshtml",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Views\\Domicilios\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T04:17:16.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\MetodoDePagoes\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Views\\MetodoDePagoes\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\MetodoDePagoes\\Edit.cshtml",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Views\\MetodoDePagoes\\Edit.cshtml",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAwwGAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T03:51:25.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Productoes\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Lab4ProyectoFinal\\Views\\Productoes\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\Views\\Productoes\\Edit.cshtml",
+              "RelativeToolTip": "Lab4ProyectoFinal\\Views\\Productoes\\Edit.cshtml",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAAEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T03:51:08.848Z",
               "EditorCaption": ""
             }
           ]
