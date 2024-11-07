@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\Lab4ProyectoFinal.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\wwwroot\\Fotos\\Persona1.jpg",
+      "PackagePath": "staticwebassets\\Fotos\\Persona1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\wwwroot\\Fotos\\persona2.jpg",
+      "PackagePath": "staticwebassets\\Fotos\\persona2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\wwwroot\\Fotos\\persona3.jpg",
+      "PackagePath": "staticwebassets\\Fotos\\persona3.jpg"
+    },
+    {
       "Id": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\wwwroot\\Fotos\\producto1.jpg",
       "PackagePath": "staticwebassets\\Fotos\\producto1.jpg"
     },
@@ -19,6 +31,26 @@
     {
       "Id": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\wwwroot\\Fotos\\producto4.jpg",
       "PackagePath": "staticwebassets\\Fotos\\producto4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\wwwroot\\Fotos\\producto5.jpg",
+      "PackagePath": "staticwebassets\\Fotos\\producto5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\wwwroot\\Fotos\\producto6.jpg",
+      "PackagePath": "staticwebassets\\Fotos\\producto6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\wwwroot\\Fotos\\producto7.jpg",
+      "PackagePath": "staticwebassets\\Fotos\\producto7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\wwwroot\\Fotos\\producto8.jpg",
+      "PackagePath": "staticwebassets\\Fotos\\producto8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\wwwroot\\Fotos\\producto9.jpg",
+      "PackagePath": "staticwebassets\\Fotos\\producto9.jpg"
     },
     {
       "Id": "C:\\Users\\alejo\\Desktop\\Colegio\\Tarea facu\\PracticoFinalLab4\\Lab4ProyectoFinal\\wwwroot\\css\\site.css",

@@ -1,8 +1,7 @@
 ﻿@model Lab4ProyectoFinal.Models.MetodoDePago
-
-@{
-    ViewData["Title"] = "Detalles del Método de Pago";
-}
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 
 <div class="container my-5">
     <h1 class="text-center mb-4">Detalles del Método de Pago</h1>
@@ -13,23 +12,17 @@
         </div>
         <div class="card-body">
             <dl class="row">
-                <dt class="col-sm-4 text-secondary">
-                    @Html.DisplayNameFor(model => model.NumeroDeTarjeta)
-                </dt>
+                <dt class="col-sm-4 text-secondary fw-bold">Número de Tarjeta:</dt>
                 <dd class="col-sm-8">
                     <strong>@Html.DisplayFor(model => model.NumeroDeTarjeta)</strong>
                 </dd>
 
-                <dt class="col-sm-4 text-secondary">
-                    @Html.DisplayNameFor(model => model.MarcaDeTarjeta)
-                </dt>
+                <dt class="col-sm-4 text-secondary fw-bold">Marca de Tarjeta:</dt>
                 <dd class="col-sm-8">
                     <strong>@Html.DisplayFor(model => model.MarcaDeTarjeta)</strong>
                 </dd>
 
-                <dt class="col-sm-4 text-secondary">
-                    @Html.DisplayNameFor(model => model.Expiracion)
-                </dt>
+                <dt class="col-sm-4 text-secondary fw-bold">Expiración:</dt>
                 <dd class="col-sm-8">
                     <strong>@Html.DisplayFor(model => model.Expiracion)</strong>
                 </dd>
@@ -38,15 +31,10 @@
     </div>
 
     <div class="text-center mt-4">
-        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning mx-2">
-            <i class="fas fa-edit"></i> Editar
-        </a>
-        <a asp-action="Index" class="btn btn-secondary mx-2">
-            <i class="fas fa-arrow-left"></i> Volver a la lista
-        </a>
+        @if (User.IsInRole("Admin") || User.IsInRole("Manager"))
+        {
+            <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning me-2">Editar</a>
+        }
+        <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
     </div>
 </div>
-
-@section Scripts {
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Iconos Font Awesome -->
-}

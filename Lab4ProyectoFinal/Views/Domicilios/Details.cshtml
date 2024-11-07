@@ -1,26 +1,28 @@
 ﻿@model Lab4ProyectoFinal.Models.Domicilio
-
-@{
-    ViewData["Title"] = "Detalles del Domicilio";
-}
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 
 <div class="container my-5">
     <h1 class="text-center mb-4">Detalles del Domicilio</h1>
 
-    <div class="card">
-        <div class="card-header">
+    <div class="card shadow-lg">
+        <div class="card-header bg-primary text-white">
             <h4 class="mb-0">Información del Domicilio</h4>
         </div>
         <div class="card-body">
             <dl class="row">
-                <dt class="col-sm-4">Calle</dt>
+                <dt class="col-sm-4 text-secondary fw-bold">Calle:</dt>
                 <dd class="col-sm-8">@Html.DisplayFor(model => model.Calle)</dd>
             </dl>
         </div>
     </div>
 
     <div class="text-center mt-4">
-        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning me-2">Editar</a>
+        @if (User.IsInRole("Admin") || User.IsInRole("Manager"))
+        {
+            <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning me-2">Editar</a>
+        }
         <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
     </div>
 </div>

@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Lab4ProyectoFinal.Data;
 using Lab4ProyectoFinal.Models;
 using X.PagedList.Extensions;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Lab4ProyectoFinal.Controllers
 {
@@ -21,9 +22,10 @@ namespace Lab4ProyectoFinal.Controllers
         }
 
         // GET: Productoes
+      //  [Authorize(Roles = "Admin,Manager,Usuario")] Mucho lio al crear un nuevo usuario
         public IActionResult Index(string buscarProducto, int? page)
         {
-            int pageSize = 6;
+            int pageSize = 5;
             int pageNumber = page ?? 1;
 
             var productos = from producto in _context.Productos select producto;
@@ -58,6 +60,7 @@ namespace Lab4ProyectoFinal.Controllers
         }
 
         // GET: Productoes/Create
+        [Authorize(Roles = "Admin,Manager")]
         public IActionResult Create()
         {
             return View();
@@ -80,6 +83,7 @@ namespace Lab4ProyectoFinal.Controllers
         }
 
         // GET: Productoes/Edit/5
+        [Authorize(Roles = "Admin,Manager")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -131,6 +135,7 @@ namespace Lab4ProyectoFinal.Controllers
         }
 
         // GET: Productoes/Delete/5
+        [Authorize(Roles = "Admin,Manager")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

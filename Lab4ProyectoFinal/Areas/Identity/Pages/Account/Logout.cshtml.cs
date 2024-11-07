@@ -29,7 +29,7 @@ namespace Lab4ProyectoFinal.Areas.Identity.Pages.Account
             _logger.LogInformation("User logged out.");
             if (returnUrl != null)
             {
-                return LocalRedirect("/Home/Index");
+                return LocalRedirect("/Productoes/Index");
             }
             else
             {

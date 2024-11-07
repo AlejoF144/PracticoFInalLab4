@@ -2,9 +2,11 @@
 using ClosedXML.Excel;
 using Lab4ProyectoFinal.Models;
 using Lab4ProyectoFinal.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Lab4ProyectoFinal.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ImportarExcelController : Controller
     {
         private readonly AppDbContext _context;

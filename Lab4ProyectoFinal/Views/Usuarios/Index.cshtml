@@ -1,7 +1,8 @@
 ﻿@model X.PagedList.IPagedList<Lab4ProyectoFinal.Models.Usuario>
 @using X.PagedList.Mvc.Core
-
-
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 <div class="container my-5">
     <h1 class="text-center mb-4">Lista de Usuarios</h1>
 
@@ -9,6 +10,7 @@
         <input type="text" name="buscarUsuario" id="buscarUsuario" class="form-control form-control-sm me-2" placeholder="Nombre del usuario" />
         <button type="submit" class="btn btn-dark btn-sm">BUSCAR</button>
     </form>
+
     <div class="card shadow-sm">
         <div class="card-body p-0">
             <table class="table table-striped mb-0">
@@ -33,18 +35,24 @@
                             <td><img src="/Fotos/@item.ImagenCarpeta" class="img-fluid" style="max-width: 100px;" /></td>
                             <td>@(item.MetodoDePago != null ? item.MetodoDePago.MarcaDeTarjeta + " " + item.MetodoDePago.NumeroDeTarjeta : "No especificado")</td>
                             <td>@(item.Domicilio != null ? item.Domicilio.Calle : "No especificado")</td>
-                            <td class="text-center">
-                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm me-2">Editar</a>
-                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm me-2 text-white">Detalles</a>
-                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Eliminar</a>
-                            </td>
+                            @if (User.IsInRole("Admin") || User.IsInRole("Manager"))
+                            {
+                                <td class="text-center">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm me-2">Editar</a>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm me-2 text-white">Detalles</a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Eliminar</a>
+                                </td>
+                            }
+                            else
+                            {
+                                <td> <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm me-2 text-white">Detalles</a>  </td>
+                            }
                         </tr>
                     }
                 </tbody>
             </table>
         </div>
     </div>
-
     <div class="pagination-container mt-4">
         @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions
    {
@@ -62,6 +70,5 @@
        DisplayLinkToNextPage = PagedListDisplayMode.Always,
        Display = PagedListDisplayMode.Always
    })
-    </div>
     </div>
 </div>

@@ -1,12 +1,11 @@
 ﻿@model Lab4ProyectoFinal.Models.Producto
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 
-@{
-    ViewData["Title"] = "Details";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
 
 <div class="container my-5">
-    <h1 class="text-center mb-4">@ViewData["Title"] Producto</h1>
+    <h1 class="text-center mb-4">Detalles de Producto</h1>
 
     <div class="card">
         <div class="card-header">
@@ -41,7 +40,11 @@
     </div>
 
     <div class="text-center mt-4">
-        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning me-2">Editar</a>
+        @if (User.IsInRole("Admin") || User.IsInRole("Manager"))
+        {
+            <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning me-2">Editar</a>
+        }
+    
         <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
     </div>
 </div>

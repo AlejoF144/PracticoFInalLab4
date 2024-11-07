@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Lab4ProyectoFinal.Data;
 using Lab4ProyectoFinal.Models;
 using X.PagedList.Extensions;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Lab4ProyectoFinal.Controllers
 {
@@ -59,6 +60,7 @@ namespace Lab4ProyectoFinal.Controllers
         }
 
         // GET: MetodoDePagoes/Create
+        [Authorize(Roles = "Admin,Manager")]
         public IActionResult Create()
         {
             return View();
@@ -81,6 +83,7 @@ namespace Lab4ProyectoFinal.Controllers
         }
 
         // GET: MetodoDePagoes/Edit/5
+        [Authorize(Roles = "Admin,Manager")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -132,6 +135,7 @@ namespace Lab4ProyectoFinal.Controllers
         }
 
         // GET: MetodoDePagoes/Delete/5
+        [Authorize(Roles = "Admin,Manager")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

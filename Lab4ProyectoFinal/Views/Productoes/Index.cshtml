@@ -1,8 +1,10 @@
 ﻿@model X.PagedList.IPagedList<Lab4ProyectoFinal.Models.Producto>
 @using X.PagedList.Mvc.Core
-@{
-    ViewData["Title"] = "Listado de Productos";
-}
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
 
 <div class="container my-5">
     <h1 class="text-center mb-4">Listado de Productos</h1>
@@ -42,11 +44,19 @@
                             <td>@Html.DisplayFor(modelItem => item.Tamaño)</td>
                             <td>@Html.DisplayFor(modelItem => item.Descripcion)</td>
                             <td><img src="/Fotos/@item.ImagenCarpeta" class="img-fluid" style="max-width: 100px;" /></td>
-                            <td class="text-center">
-                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm me-2">Editar</a>
-                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm me-2 text-white">Detalles</a>
-                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Eliminar</a>
-                            </td>
+                            @if (User.IsInRole("Admin") || User.IsInRole("Manager"))
+                            {
+                                <td class="text-center">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm me-2">Editar</a>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm me-2 text-white">Detalles</a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Eliminar</a>
+                                </td>
+                            }
+                            else
+                            {
+                                <td> <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm me-2 text-white">Detalles</a>  </td>
+                            }
+
                         </tr>
                     }
                 </tbody>

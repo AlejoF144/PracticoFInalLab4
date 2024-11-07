@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Lab4ProyectoFinal.Data;
 using Lab4ProyectoFinal.Models;
 using X.PagedList.Extensions;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace Lab4ProyectoFinal.Controllers
@@ -31,14 +32,14 @@ namespace Lab4ProyectoFinal.Controllers
                 .Include(u => u.MetodoDePago)
                 .Include(u => u.Domicilio)
                 .AsQueryable();
-
-            // Filtrar los usuarios según el término de búsqueda
+            
+            
             if (!string.IsNullOrEmpty(buscarUsuario))
             {
                 usuarios = usuarios.Where(u => u.Nombre!.Contains(buscarUsuario));
             }
 
-            // Ordenar por el más reciente y aplicar paginación
+       
             var UsuariosPaginados = usuarios.OrderByDescending(p => p.Id).ToPagedList(pageNumber, pageSize);
 
             return View(UsuariosPaginados);
@@ -67,6 +68,7 @@ namespace Lab4ProyectoFinal.Controllers
         }
 
         // GET: Usuarios/Create
+        [Authorize(Roles = "Admin,Manager")]
         public IActionResult Create()
         {
             ViewData["MetodoDePagoId"] = new SelectList(_context.MetodoDePagos, "Id", "MarcaDeTarjeta");
@@ -91,6 +93,7 @@ namespace Lab4ProyectoFinal.Controllers
         }
 
         // GET: Usuarios/Edit/5
+        [Authorize(Roles = "Admin,Manager")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -152,6 +155,7 @@ namespace Lab4ProyectoFinal.Controllers
         }
 
         // GET: Usuarios/Delete/5
+        [Authorize(Roles = "Admin,Manager")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
